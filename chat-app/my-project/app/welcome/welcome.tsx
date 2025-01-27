@@ -42,12 +42,20 @@ export function Welcome() {
           </nav>
         </div>
       </div> */}
-      <div className="flex-col">
+      {/* <div className="flex-col">
         <h1 className="text-gray-700 items-center justify-center">Chat Room</h1>
         <p className="text-gray-700 h-52 border-2 p-5">
           Welcome to this chat room
         </p>
-      </div>
+      </div> */}
+
+      <ul id="messages"></ul>
+      <form id="form" action="">
+        <input id="input" autoComplete="off" />
+        <button>Send</button>
+      </form>
+      <script src="/socket.io/socket.io.js"></script>
+      <script src="/js/main.js"></script>
     </main>
   );
 }
