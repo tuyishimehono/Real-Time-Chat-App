@@ -55,7 +55,7 @@ export function Welcome() {
         <button>Send</button>
       </form>
       <script src="/socket.io/socket.io.js"></script>
-      <script src="/js/main.js"></script>
+      <script src="./js/main.js"></script>
     </main>
   );
 }
