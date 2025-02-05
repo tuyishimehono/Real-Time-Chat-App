@@ -1,11 +1,20 @@
 export function Welcome() {
   return (
     <main className="flex items-center justify-center pt-16 pb-4">
-      <ul id="messages"></ul>
-      <form id="form" action="">
-        <input id="input" autoComplete="off" />
-        <button>Send</button>
-      </form>
+      <div>
+        <h1>{`<>DevRooms</>`}</h1>
+        <input placeholder="Username..." />
+
+        <select>
+          <option>-- Select Room --</option>
+          <option value="javascript">JavaScript</option>
+          <option value="node">Node</option>
+          <option value="express">Express</option>
+          <option value="react">React</option>
+        </select>
+
+        <button className="btn btn-secondary">Join Room</button>
+      </div>
       <script src="/socket.io/socket.io.js"></script>
       <script src="./js/main.js"></script>
     </main>
